@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f51e0cfb263248dc9cd6ab0a76cb0d23" Name="Diagram1">
+        <EntityTypeShape EntityType="PVModel.DetalleCompras" Width="1.5" PointX="5.25" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PVModel.DetalleVentas" Width="1.5" PointX="8.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PVModel.Marcas" Width="1.5" PointX="3.75" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PVModel.Productos" Width="1.5" PointX="6" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PVModel.Proveedores" Width="1.5" PointX="3.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PVModel.Roles" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PVModel.Sesiones" Width="1.5" PointX="5.25" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PVModel.TipoPagos" Width="1.5" PointX="6" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PVModel.TipoProductos" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PVModel.Usuarios" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="PVModel.Ventas" Width="1.5" PointX="8.25" PointY="5.875" IsExpanded="true" />
+        <AssociationConnector Association="PVModel.FK_DetalleCompras_Marcas" ManuallyRouted="false" />
+        <AssociationConnector Association="PVModel.FK_DetalleCompras_Usuarios" ManuallyRouted="false" />
+        <AssociationConnector Association="PVModel.FK_DetalleVentas_Productos" ManuallyRouted="false" />
+        <AssociationConnector Association="PVModel.FK_DetalleVentas_TipoPagos" ManuallyRouted="false" />
+        <AssociationConnector Association="PVModel.FK_DetalleVentas_TipoProductos" ManuallyRouted="false" />
+        <AssociationConnector Association="PVModel.FK_DetalleVentas_Usuarios" ManuallyRouted="false" />
+        <AssociationConnector Association="PVModel.FK_DetalleVentas_Ventas" ManuallyRouted="false" />
+        <AssociationConnector Association="PVModel.FK_Productos_Marcas" ManuallyRouted="false" />
+        <AssociationConnector Association="PVModel.FK_Productos_TipoProductos" ManuallyRouted="false" />
+        <AssociationConnector Association="PVModel.FK_TipoProductos_Proveedores" ManuallyRouted="false" />
+        <AssociationConnector Association="PVModel.FK_Sesiones_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="PVModel.FK_Usuarios_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="PVModel.FK_Sesiones_Usuarios" ManuallyRouted="false" />
+        <AssociationConnector Association="PVModel.FK_Ventas_TipoPagos" ManuallyRouted="false" />
+        <AssociationConnector Association="PVModel.FK_Ventas_TipoProductos" ManuallyRouted="false" />
+        <AssociationConnector Association="PVModel.FK_Ventas_Usuarios" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

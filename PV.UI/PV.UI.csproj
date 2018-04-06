@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC0E9BB6-A291-4168-818A-0CF350C0B871}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PV.UI</RootNamespace>
+    <AssemblyName>PV.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAdmMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmMarcas.Designer.cs">
+      <DependentUpon>frmAdmMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmProductos.Designer.cs">
+      <DependentUpon>frmAdmProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmProveedores.Designer.cs">
+      <DependentUpon>frmAdmProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmRoles.Designer.cs">
+      <DependentUpon>frmAdmRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmSesiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmSesiones.Designer.cs">
+      <DependentUpon>frmAdmSesiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmTipoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmTipoPago.Designer.cs">
+      <DependentUpon>frmAdmTipoPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmTipoProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmTipoProductos.Designer.cs">
+      <DependentUpon>frmAdmTipoProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmUsuarios.Designer.cs">
+      <DependentUpon>frmAdmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMarcas.Designer.cs">
+      <DependentUpon>frmMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductos.Designer.cs">
+      <DependentUpon>frmProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProveedores.Designer.cs">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPuntoVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPuntoVenta.Designer.cs">
+      <DependentUpon>frmPuntoVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRoles.Designer.cs">
+      <DependentUpon>frmRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoProductos.Designer.cs">
+      <DependentUpon>frmTipoProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipPagos.Designer.cs">
+      <DependentUpon>frmTipPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarios.Designer.cs">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAdmMarcas.resx">
+      <DependentUpon>frmAdmMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmProductos.resx">
+      <DependentUpon>frmAdmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmProveedores.resx">
+      <DependentUpon>frmAdmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmRoles.resx">
+      <DependentUpon>frmAdmRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmSesiones.resx">
+      <DependentUpon>frmAdmSesiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmTipoPago.resx">
+      <DependentUpon>frmAdmTipoPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmTipoProductos.resx">
+      <DependentUpon>frmAdmTipoProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmUsuarios.resx">
+      <DependentUpon>frmAdmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMarcas.resx">
+      <DependentUpon>frmMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductos.resx">
+      <DependentUpon>frmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProveedores.resx">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPuntoVenta.resx">
+      <DependentUpon>frmPuntoVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRoles.resx">
+      <DependentUpon>frmRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoProductos.resx">
+      <DependentUpon>frmTipoProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipPagos.resx">
+      <DependentUpon>frmTipPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PV.BC\PV.BC.csproj">
+      <Project>{e490cd4a-1485-4562-b5f6-ed1617c54213}</Project>
+      <Name>PV.BC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PV.DL.DataModel\PV.DL.DataModel.csproj">
+      <Project>{dbbea2d2-13a0-4ab8-9a91-8a8fe46c1ca9}</Project>
+      <Name>PV.DL.DataModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginImage-400x300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_lockstart_session_18121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_system-search_118797.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_new-file_85332.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_edit-clear_118917.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_edit-delete_118920.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_floppy_285657.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_f-cross_256_282471.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_MicrosoftWindows_2503937.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_edit_173002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_vendingmachine_1936906.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_exit_3226.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_partners_45076.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Login Manager_7261.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginImage-400x3001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_coins_17220.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Groceries_online_shopping_cart_e_commerce_shopping_cart_1887038.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_time_173116.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
